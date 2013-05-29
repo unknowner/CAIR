@@ -1,16 +1,13 @@
 {
-	"name": "CAIR - Castle Age Image Replacer",
-	"version": "0.1",
-	"description": "CAIR",
-	"content_scripts": [
-		{
-			"matches": ["*://web.castleagegame.com/castle/*"],
-			"js": ["js/jquery.js", "js/images.js", "js/main.js"],
-			"all_frames": true
-		}
+	"name" : "CAIR - Castle Age Image Replacer",
+	"version" : "0.2",
+	"description" : "bla bla",
+	"permissions" : [
+			"webRequest", "webRequestBlocking", "*://image4.castleagegame.com/*", "*://castleagegame1-a.akamaihd.net/*"
 	],
-	"homepage_url": "http://cagenhancer.blogspot.com/",
-	"permissions": ["tabs", "*://web.castleagegame.com/castle/*"],
-	"icons": {},
-	"run_at": "document_end"
+	"background" : {
+		"page" : "background.html"
+	},
+	"options_page": "options.html",
+	"manifest_version" : 2
 }
