@@ -5,14 +5,20 @@
 
 <body>
 
-	<span>Image Host (eg http://localhost:8080/)</span>
-	<input type="text" id="host" />
-	<br>
-	<span>Image list (acb.jpg, def.gif, ...)</span>
-	<textarea rows="20" cols="50" id="images"></textarea>
-	<br>
-	<div id="status"></div>
+	<div>Local server path to images (eg
+		http://localhost:8080/Castleage/)</div>
+	<input type="text" id="host" size="50" />
+	<span id="status1"></span>
 	<button id="save">Save</button>
+	<br>
+	<br>
+	<div>Read image names from local directory. Needs to be called
+		when images changed</div>
+	<span>Local directory </span>
+	<input type="file" id="images" webkitdirectory directory multiple />
+	<span id="status2"></span>
+	<br>
+	<br>
 </body>
 
 <script src="js/options.js"></script>

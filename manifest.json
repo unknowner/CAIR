@@ -1,6 +1,6 @@
 {
 	"name" : "CAIR - Castle Age Image Replacer",
-	"version" : "0.2",
+	"version" : "0.3",
 	"description" : "bla bla",
 	"permissions" : [
 			"webRequest", "webRequestBlocking", "*://image4.castleagegame.com/*", "*://castleagegame1-a.akamaihd.net/*"
